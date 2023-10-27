@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 84%;
+    margin: 0 auto;
+    background-color: #f8c6d5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 2rem;
+}
+
+.q__no p , .q__score p {
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+    
+}
+
+.q__no span {
+    display: block;
+    height: 100%;
+    width: 16%;
+    background-color: #df658a;
+    /* border: 1px solid ; */
+
+
+}
+
+.q__no div {
+    border: 2px solid #df658a;
+    margin-top: .3rem;
+    width: 11rem;
+    height: 2rem;
+}
+
+.q__score span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+    bottom: .7rem;
+    color: #df658a;
+}
+
+h1 {
+    font-size: 4.7rem;
+    color: #504f4f;
+}
+
+ul {
+    list-style: none;
+    margin-top: 2.5rem;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 2.9rem;
+    margin-bottom: .5rem;
+    background-color: white;
+    border-radius: .3rem;
+}
+
+li span {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 3.4rem;
+    background-color: #df658a;
+    color: white;
+    font-weight: 600;
+
+}
+
+li p {
+    font-size: 1.05rem;
+    color: #504f4f;
+    font-weight: 600;
+}

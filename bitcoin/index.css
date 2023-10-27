@@ -1,0 +1,296 @@
+html{box-sizing: border-box;}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.cover > img{
+    /* width: 100%; */
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+}
+b{
+    position: relative;
+    left: 2.5em;
+    font-size: 1.5rem;
+    color: white;
+
+}
+
+.head{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wrapper ul a{
+    /* border: 1px solid red; */
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* color: bisque; */
+    font-size: 15px;
+    font-weight: 600;
+}
+
+label{
+    display: inline-block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 6px 12px;
+}
+
+.wrapper{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 4%;
+    justify-content: space-around;
+    position: relative;
+}
+
+.wrapper input:checked ~ .nav-menu{
+    display: block;
+}
+
+input, .nav-menu{
+display: none;
+}
+
+.nav-menu{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+
+}
+label::before{
+    content: "\2630";
+    color: white;
+}
+
+.wrapper input:checked + label::before{
+    content: "\2715";
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+   text-decoration: none; 
+   color: white;
+   text-transform: capitalize;
+   font-size: 1rem;
+   line-height: 1.5;
+   display: block;
+   /* background-color: rgba(240, 248, 255, 0.801); */
+}
+
+
+main{
+    text-align: center;
+    margin-top: 5em;
+    color: white;
+    text-transform: capitalize;
+
+    
+}
+
+.sub-article{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: white;
+    font-weight: 900;
+    
+}
+.button{
+    margin-left: 5em;
+    display: flex;
+    gap: 3%;
+    cursor: pointer;
+}
+.butt{
+    background-color: white;
+    padding: 1rem;
+    width: 11em;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+.wrapper2{
+    font-size: 2em;
+}
+
+.gold{
+    color: yellow;
+}
+
+.button :first-child{
+    background-color: rgb(243, 194, 34);
+    color: white;
+    font-weight: 700;
+}
+
+body{
+    background-image: url("https://media.istockphoto.com/id/920356160/vector/bitcoin-illustration-concept-futuristic-digital-money-technology-worldwide-network-concept.webp?s=2048x2048&w=is&k=20&c=4V3jy3y0jnnTkp-njQEy5wn3DXuHU309K-QWGc6P5Dc=");
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    /* display: flex; */
+}
+
+/* for desktop */
+
+@media (min-width : 980px){
+    .wrapper > *:last-child > ul{
+        display: flex;  
+        gap: 4%;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .wrapper > *:first-child{
+        /* border: 1px solid purple;  */
+       flex-basis: 18%;
+       margin-right: auto; 
+   }
+
+   .wrapper > *:last-child{
+    flex-basis: 78%;
+} 
+
+label{
+    display: none;
+}
+
+.nav-menu{
+    display: block;
+    position: static;
+}
+[class$="1"] a {
+    color: yellow !important;
+}
+
+.wrapper{
+    background-color: rgba(109, 109, 9, 0.541);
+    padding: 0.5rem;
+}
+
+.wrapper2{
+    font-size: 3em;
+}
+
+main{
+    text-align: end;
+    margin-right: 5em;
+}
+
+.button{
+    margin-left: 32em;
+}
+
+body{
+    background-image: url("https://media.istockphoto.com/id/1248674191/photo/bitcoin-gold-cryptocurrency-trading-chart.jpg?s=612x612&w=0&k=20&c=Zj-t9bYp9FChMLXGMRqt2l41KGjYp1jZaehbCKjJWcw=");
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    /* display: flex; */
+}
+
+}
+
+
+
+
+
+/* for small phone */
+@media(max-width : 280px){
+   
+    .button{
+        margin-left: 1em;
+
+    }
+}
+
+@media(min-width : 360px){
+    .button{
+        margin-left: 1em;
+
+}
+}
+
+@media(min-width : 540px){
+    .button{
+        margin-left: 5em;
+
+}
+}
+
+@media(min-width : 768px){
+    .button{
+        margin-left: 11em;
+
+}
+}
+
+@media(min-width : 912px){
+    .button{
+        margin-left: 16em;
+
+}
+}
+/* for biggest screens */
+@media(min-width : 1024px){
+    .button{
+        margin-left: 35em;
+
+}
+}
+
+@media(min-width : 1280px){
+    .button{
+        margin-left: 52em;
+
+}
+}
+
+@media(min-width : 1500px){
+    .button{
+        margin-left: 70em;
+
+}
+}
+@media(max-width : 980px){
+    a{
+        text-decoration: none; 
+        color: black;
+        text-transform: capitalize;
+        font-size: 1rem;
+        line-height: 1.5;
+        display: block;
+        background-color: rgba(240, 248, 255, 0.637);
+        
+        
+     }
+li a{
+    margin-left: 20em;
+    border-radius: 10px;
+}
+     
+}

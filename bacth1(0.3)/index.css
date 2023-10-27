@@ -1,0 +1,20 @@
+html{box-sizing: border-box;}
+*,
+*::before,
+*::after{
+    padding: 2px;
+    margin: 5px;
+}
+
+li::marker{
+    font-style: oblique;
+    font-weight: 900;
+    text-shadow: 2px 3px 7px ;
+    
+}
+li{
+    margin-bottom: 1rem;
+}
+.first{
+    margin-left: 100px;
+}
